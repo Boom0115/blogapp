@@ -10,6 +10,8 @@ class PostFixture extends CakeTestFixture {
  *
  * @var array
  */
+    public $import = ['model' => 'Post'];
+    /*
 	public $fields = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false, 'key' => 'primary'),
 		'title' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
@@ -21,6 +23,7 @@ class PostFixture extends CakeTestFixture {
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);
+    */
 
 /**
  * Records
@@ -32,8 +35,8 @@ class PostFixture extends CakeTestFixture {
 			'id' => 1,
 			'title' => 'Lorem ipsum dolor sit amet',
 			'body' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-			'created' => '2015-05-24 11:07:30',
-			'modified' => '2015-05-24 11:07:30'
+			'created' => '2015-05-24 16:39:52',
+			'modified' => '2015-05-24 16:39:52'
 		),
 	);
 

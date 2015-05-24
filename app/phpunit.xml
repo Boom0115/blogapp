@@ -11,7 +11,7 @@
         <log type="junit" target="./reports/unittest.xml" />
     </logging>
     -->
-    
+
     <filter>
         <blacklist>
             <directory suffix=".php">Plugin</directory>
