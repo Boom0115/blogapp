@@ -1,0 +1,17 @@
+{
+    "name": "boom0115/blogapp",
+    "description": "Study for CakePHP CI Development",
+    "authors": [
+        {
+            "name": "Tetsuya Takahashi",
+            "email": "takahashi@dreamthread.net"
+        }
+    ],
+    "config": {
+        "vendor-dir": "Vendor"
+    },
+    "require": {
+        "cakephp/cakephp": "2.5.*",
+        "josegonzalez/cakephp-environments": "1.0.0"
+    }
+}
