@@ -1,0 +1,22 @@
+<phpunit>
+    <testsuites>
+        <testsuite name="AllTests">
+            <directory>Test/Case</directory>
+        </testsuite>
+    </testsuites>
+
+    <!--
+    <logging>
+        <log type="coverage-clober" target="./reports/coverage.xml" />
+        <log type="junit" target="./reports/unittest.xml" />
+    </logging>
+    -->
+    
+    <filter>
+        <blacklist>
+            <directory suffix=".php">Plugin</directory>
+            <directory suffix=".php">Test</directory>
+            <directory suffix=".php">Vendor</directory>
+        </blacklist>
+    </filter>
+</phpunit>
