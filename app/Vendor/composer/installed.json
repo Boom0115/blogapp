@@ -2228,5 +2228,35 @@
             "cakephp",
             "migrations"
         ]
+    },
+    {
+        "name": "sizuhiko/fabricate",
+        "version": "1.2.1",
+        "version_normalized": "1.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sizuhiko/Fabricate.git",
+            "reference": "3b48de238a749577565cc2be4aa6721c9f5b60bf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sizuhiko/Fabricate/zipball/3b48de238a749577565cc2be4aa6721c9f5b60bf",
+            "reference": "3b48de238a749577565cc2be4aa6721c9f5b60bf",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "*"
+        },
+        "time": "2014-07-21 08:21:32",
+        "type": "cakephp-plugin",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "sizuhiko",
+                "email": "sizuhiko@gmail.com"
+            }
+        ],
+        "description": "CakePHP data generator for Testing"
     }
 ]
