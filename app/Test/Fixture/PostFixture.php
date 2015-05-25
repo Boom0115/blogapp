@@ -5,6 +5,10 @@
  */
 class PostFixture extends CakeTestFixture {
 
-    public $import = ['model' => 'Post'];
-
+/**
+ * Import
+ *
+ * @var array
+ */
+	public $import = array('model' => 'Post');
 }

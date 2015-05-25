@@ -41,18 +41,16 @@ class PostTest extends CakeTestCase {
     /**
      * @dataProvider exampleValidationErrors
      */
-    public function testバリデーションエラー($column, $value, $message)
-    {
+    public function testバリデーションエラー($column, $value, $message) {
         $post = Fabricate::build('Post', [$column=>$value]);
         $this->assertFalse($post->validates());
         $this->assertEquals([$message], $this->Post->validationErrors[$column]);
     }
 
-    public function exampleValidationErrors()
-    {
+    public function exampleValidationErrors() {
         return [
             ['title', '', 'タイトルは必須入力です'],
-            ['title', str_pad('', 256, "a"), 'タイトルは255文字以内で入力して下さい'],
+            ['title', str_pad('', 256, "a"), 'タイトルは255文字以内で入力してください'],
         ];
     }
 }

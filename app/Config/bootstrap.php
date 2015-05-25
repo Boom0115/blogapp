@@ -13,11 +13,10 @@
  * @since         CakePHP(tm) v 0.10.8.2117
  */
 
+require_once dirname(dirname(__FILE__)) . DS . 'Vendor' . DS . 'autoload.php';
+
 // Setup a 'default' cache configuration for use in the application.
 Cache::config('default', array('engine' => 'File'));
-// オートロードの設定追加
-require_once dirname(dirname(__FILE__)) . DS . 'Vendor' . DS . 'autoload.php';
-// ホスト別環境設定の読み込み
 include dirname(__FILE__) . DS . 'bootstrap' . DS . 'environments.php';
 
 /**

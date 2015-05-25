@@ -16,11 +16,11 @@ class Post extends AppModel {
 			'notEmpty' => [
 				'rule' => ['notEmpty'],
 				'message' => 'タイトルは必須入力です',
-            ],
-            'maxLength' => [
-                'rule' => ['maxLength', '255'],
-                'message' => 'タイトルは255文字以内で入力して下さい',
-            ],
+      ],
+      'maxLength' => [
+          'rule' => ['maxLength', '255'],
+        'message' => 'タイトルは255文字以内で入力してください',
+      ],
 		],
 	];
 }

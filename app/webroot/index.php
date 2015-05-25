@@ -38,9 +38,6 @@ if (!defined('APP_DIR')) {
 	define('APP_DIR', basename(dirname(dirname(__FILE__))));
 }
 
-//if (!defined('CAKE_CORE_INCLUDE_PATH')) {
-//    define('CAKE_CORE_INCLUDE_PATH', '/var/www/application/current/app/Vendor/cakephp/cakephp/lib')
-//}
 /**
  * The absolute path to the "cake" directory, WITHOUT a trailing DS.
  *

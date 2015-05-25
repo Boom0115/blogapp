@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: takahashi
- * Date: 2015/05/24
- * Time: 0:59
- */
 CakePlugin::load('Environments');
 App::uses('Environment', 'Environments.Lib');
 

@@ -5,8 +5,8 @@
         </p>
     </div>
 </nav>
-<?php FOREACH ($posts as $post): ?>
-    <div>
+<?php foreach ($posts as $post): ?>
+    <section>
         <h1><?= h($post['Post']['title']) ?></h1>
         <?= h($post['Post']['body']) ?>
         <p class="actions">
@@ -17,20 +17,23 @@
                                     'action' => 'delete',
                                     $post['Post']['id']],
                                     null,
-                                    __('記事「%s」を削除しても宜しいですか', $post['Post']['title'])
+                                    __('記事「%s」を削除してもよろしいですか?', $post['Post']['title'])
                                     ) ?>
         </p>
-    </div>
-<?php ENDFOREACH; ?>
-<ul class="pagenation">
+    </section>
+<?php endforeach; ?>
+<ul class="pagination">
     <?php
         echo $this->Paginator->prev('&laquo;',
                                     ['escape'=>false, 'tag'=>'li'],
                                     null,
                                     ['class'=>'prev disabled', 'escape'=>false, 'tag'=>'li', 'disabledTag' => 'a']
                                     );
-        echo $this->Paginator->numbers(['separator'=>'', 'tag'=>'li', 'currentTag'=>'a'],
-                                    ['currentClass' => 'active']
+        echo $this->Paginator->numbers([
+                                    'separator'=>'', 
+                                    'tag'=>'li', 
+                                    'currentTag'=>'a',
+                                    'currentClass' => 'active']
                                     );
         echo $this->Paginator->next('&raquo;',
                                     ['escape'=>false, 'tag'=>'li'],
