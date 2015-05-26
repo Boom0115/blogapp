@@ -24,6 +24,8 @@ return array(
     'Guzzle\\Http' => array($vendorDir . '/guzzle/http'),
     'Guzzle\\Common' => array($vendorDir . '/guzzle/common'),
     'Goutte' => array($vendorDir . '/fabpot/goutte'),
+    'Faker\\PHPUnit' => array($vendorDir . '/fzaninotto/faker/test'),
+    'Faker' => array($vendorDir . '/fzaninotto/faker/src'),
     'DrSlump' => array($vendorDir . '/sizuhiko/spec-php/library'),
     'Console' => array($vendorDir . '/pear/console_commandline'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src'),
